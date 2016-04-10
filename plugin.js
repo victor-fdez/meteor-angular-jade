@@ -5,7 +5,6 @@ var babelCompiler = new BabelCompiler({
    react: true
 });
 
-console.log("Registering ng.jade");
 Plugin.registerSourceHandler(
   'ng.jade', 
   {
@@ -44,8 +43,6 @@ Plugin.registerSourceHandler(
       babelOptions
     );
 
-    //console.log(compileResult.code);
-    //console.log(compileStep.fullInputPath + " -> " + newerPath);
     compileStep.addJavaScript({
       path : newerPath,
       data : compileResult.code, //results.replace(/\n/g, '\\n'),

@@ -1,6 +1,6 @@
 Package.describe({
   name: 'victor755:meteor-angular-jade',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Meteor plugin to compile Jade into angular-meteor templates using ecmascript',
   // URL to the Git repository containing the source code for this package.
@@ -29,7 +29,7 @@ Package.registerBuildPlugin({
     'plugin.js'
   ],
   use: [
-    'babel-compiler',
+    'babel-compiler@6.6.1',
     'ecmascript'
   ],
   npmDependencies : {

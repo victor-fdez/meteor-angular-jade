@@ -33,7 +33,7 @@ Package.registerBuildPlugin({
     'babel-compiler@6.6.1',
     'angular-templates@1.0.3',
     'ecmascript',
-    'caching-compiler'
+    'caching-compiler@1.0.4'
   ],
   npmDependencies : {
     'html-minifier': '0.7.2',

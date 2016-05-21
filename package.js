@@ -11,8 +11,9 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.3.1');
+  api.versionsFrom('1.3.2');
   api.use('ecmascript');
+  api.use('isobuild:compiler-plugin@1.0.0')
   api.mainModule('meteor-angular-jade.js');
 });
 
@@ -24,17 +25,18 @@ Package.onTest(function(api) {
 });
 
 Package.registerBuildPlugin({
-  name: "compileJadeAngular",
+  name: "ngJadeCompiler",
   sources: [
     'plugin.js'
   ],
   use: [
     'babel-compiler@6.6.1',
-    'ecmascript'
+    'angular-templates@1.0.3',
+    'ecmascript',
+    'caching-compiler'
   ],
   npmDependencies : {
     'html-minifier': '0.7.2',
     'jade': '1.9.2'
   }
 });
-

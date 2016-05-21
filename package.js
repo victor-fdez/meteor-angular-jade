@@ -1,6 +1,6 @@
 Package.describe({
   name: 'victor755:meteor-angular-jade',
-  version: '0.0.3',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'Meteor plugin to compile Jade into angular-meteor templates using ecmascript',
   // URL to the Git repository containing the source code for this package.
@@ -11,7 +11,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.3.2');
+  api.versionsFrom('1.3.2.4');
   api.use('ecmascript');
   api.use('isobuild:compiler-plugin@1.0.0')
   api.mainModule('meteor-angular-jade.js');

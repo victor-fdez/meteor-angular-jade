@@ -8,7 +8,7 @@ their generated files using the following ecmascript import.
 
 ```javascript
 import angular from 'angular';
-import 'angular-meteor';
+import angularTemplates from 'angular-templates';
 ```
 
 Therefore the generated code from those plugins would give errors 

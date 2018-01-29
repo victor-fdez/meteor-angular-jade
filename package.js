@@ -30,7 +30,7 @@ Package.registerBuildPlugin({
     'plugin.js'
   ],
   use: [
-    'babel-compiler@6.6.1',
+    'babel-compiler@7.0.0',
     'angular-templates@1.0.3',
     'ecmascript',
     'caching-compiler@1.0.4'
